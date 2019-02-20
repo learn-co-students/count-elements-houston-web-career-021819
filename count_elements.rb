@@ -1,4 +1,11 @@
 def count_elements(array)
-  # code goes here
+  animal_count = {}
+  array.each do |animal|
+    if animal_count[animal]
+      animal_count[animal] +=1
+    else
+      animal_count[animal] = 1
+    end
+  end
+  animal_count
 end
- 
